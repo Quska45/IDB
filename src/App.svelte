@@ -1,6 +1,7 @@
 <script>
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
+  import Nested from './Nested.svelte'
 </script>
 
 <main>
@@ -16,6 +17,8 @@
 
   <div class="card">
     <Counter />
+    <Nested></Nested>
+    <p>{@html '<div>123</div>'}</p>
   </div>
 
   <p>
